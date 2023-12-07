@@ -1,0 +1,342 @@
+/* This styles all of the websites */
+* {
+    background-color: lightyellow;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    padding: 3px;
+    margin: 5px;
+}
+
+/* This styles the nav-bar */
+nav {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* This styles the title */
+.title {
+    background-color: lightblue;
+    color: blue;
+}
+
+/* This styles the button list in the navbar */
+.navbar {
+    background-color: lightblue;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+/* This styles the individual button on the navbar*/
+.navbar-item {
+    background-color: lightblue;
+}
+
+/* This styles the links on the navbar */
+.tip-link {
+    text-decoration: none;
+    background-color: lightblue;
+    color: darkblue;
+}
+
+/* This styles the introdtuction article */
+.top-article {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+/* This styles the page title */
+h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+/* This styles the main article */
+.main-article {
+    text-align: center;
+}
+
+/* This styles the table in the "contentholder" */
+table {
+    background-color: lightgray;
+    text-align: left;
+}
+
+/* This styles the header in the table */
+th {
+    background-color: darkgray;
+}
+
+/* This styles the body in the table */
+td {
+    background-color: lightgray;
+}
+
+/* This styles a div where it has the image of me, and the 
+basic info, i.e. my birthdate */
+.contentholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* This displays the picture of me on contentholder */
+.imageholder {
+    width: 346px;
+    height: 462px;
+}
+
+/* This styles the webpage of the main.html */
+.webpage {
+    display: flex;
+    flex-direction: column;
+}
+
+/* This styles the image of Colorado in the main.html */
+.article-image {
+    width: 442px;
+    height: 332px;
+}
+
+/* This styles the gallery in "gallery.html", the page has two of these divs,
+having 4 images each, and gallery is further divided into gallery-list div, which 
+has 2 images, so that when the page changes sizes, the images gets rearranged.
+gallery-div is an unordered list that shows the image and the description that when 
+clicked on, it enlarges the image.*/
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* This displays the images on the gallery div */
+.picture {
+    width: 90%;
+    height: 90%;
+}
+
+/* These styles below adjust the forms.html webpage */
+
+/* This sets up the contents to be centered in the webpage */
+.form-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* This is the form background and it is 384 pixels wide */
+.form {
+    border-style:dashed;
+    border-color:darkslategrey;
+    border-width: 2px;
+    background-color:lightcyan;
+    text-align: center;
+    width: 384px;
+}
+
+/* Anything with this class will help blend content inside the form div */
+.form-style {
+    background-color:lightcyan;
+    color:rgb(35, 35, 60);
+}
+
+/* The form div is divided into the input-row div and inside of that, the input-column */
+.input-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:lightcyan;
+    color:rgb(35, 35, 60);
+}
+
+/* This is where you have the text stacked on top of the input */
+.info-column {
+    display: flex;
+    flex-direction: column;
+    background-color:lightcyan;
+    color:rgb(35, 35, 60);
+}
+
+/* This is the 256-pixel wide imput text */
+.string-256 {
+    width: 256px;
+    background-color:lightsteelblue;
+    color:midnightblue;
+    text-align: center;
+}
+
+/* This is the 128-pixel wide imput text */
+.string-128 {
+    width: 128px;
+    background-color:lightsteelblue;
+    color:midnightblue;
+    text-align: center;
+}
+
+/* This makes the SUMMIT button at the end blue and large */
+.press-button {
+    width: 192px;
+    height: 64px;
+    background-color:mediumblue;
+    text-align: center;
+}
+
+/* This styles the table inside of the form */
+.input-table {
+    background-color:lightcyan;
+    color:rgb(35, 35, 60);
+    text-align: center;
+}
+
+/* This styles the header in the table */
+.input-th {
+    background-color:lightcyan;
+    color:rgb(35, 35, 60);
+    text-align: center;
+}
+
+/* This styles the body in the table */
+.input-td {
+    background-color:lightcyan;
+    color:rgb(35, 35, 60);
+    text-align: center;
+}
+
+/* Here is where the fun begins! This mechanism is what makes reshuffling the page possible. 
+The listed min-widths go from narrow to wide window.*/
+
+/* The only change in this min-width is the adjustment sizes of the gallery images */
+@media only screen and (min-width: 600px) {
+    .picture {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+/* This changes the contentholder from column to row, and changes the Colorado 
+image's size*/
+@media only screen and (min-width: 720px) {
+    .contentholder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .imageholder {
+        height: 384px;
+        width: 288px;
+    }
+    .webpage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-image {
+        width: 367px;
+        height: 276px;
+    }
+}
+
+/* This changes the gallery pictures size again, and the gallery 
+is displayed as two pictures per row, instead of a complete 
+vertical list of pictures.*/
+@media only screen and (min-width: 800px) {
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .gallery-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .picture {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+/* This This pushes the contentholder to the left side of the 
+screen instead of the top of the page and changes the Colorado picture's 
+size. */
+@media only screen and (min-width: 900px) {
+    .contentholder {
+        display: flex;
+        flex-direction: column;
+    }
+    .imageholder {
+        width: 292px;
+        height: 390px;
+    }
+    .webpage {
+        display: flex;
+        flex-direction: row;
+    }
+    .article-image {
+        width: 325px;
+        height: 244px;
+    }
+    .form-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* This chanegs the Colorado picture size again, and the gallery pictures. */
+
+@media only screen and (min-width: 1200px) {
+    .contentholder {
+        display: flex;
+        flex-direction: column;
+    }
+    .webpage {
+        display: flex;
+        flex-direction: row;
+    }
+    .article-image {
+        width: 525px;
+        height: 393px;
+    }
+    .picture {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+/* This rearranges the gallery images again to where the gallery now displays 
+4 images in a row, and chanegs the images size. */
+
+@media only screen and (min-width: 1400px) {
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .gallery-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .picture {
+        width: 90%;
+        height: 90%;
+    }
+}

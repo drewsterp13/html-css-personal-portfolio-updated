@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- This is the Navbar -->
+    <nav>
+        <h1 class="title">Drewpedia</h1>
+        <ul class="navbar">
+            <li class="navbar-item"><a class="tip-link" href="main.html">HOME</a></li>
+            <li class="navbar-item"><a class="tip-link" href="gallery.html">GALLERY</a></li>
+            <li class="navbar-item"><a class="tip-link" href="forms.html">FORM</a></li>
+        </ul>
+    </nav>
+
+    <!-- This is the forms webpage -->
+    <h2>Travel Form</h2>
+    <h4>This is where you enter your travel form</h4>
+    <div class="form-page">
+
+        <!-- This is the form itself -->
+        <div class="form">
+            <h2 class="form-style">THE TRAVEL FORM</h2>
+            <h3 class="form-style">Personal Info</h3>
+            <div class="input-row">
+                <div class="info-column">
+                    <!-- First Name Input -->
+                    <h4 class="form-style">First Name</h4>
+                    <input class="string-128" type="text">
+                </div>
+                <div class="info-column">
+                    <!-- Last Name Input -->
+                    <h4 class="form-style">Last Name</h4>
+                    <input class="string-128" type="text">
+                </div>
+            </div>
+            <h3 class="form-style">Location Info</h3>
+            <div class="input-row">
+                <div class="info-column">
+                    <!-- Street Address Input -->
+                    <h4 class="form-style">Street Address</h4>
+                    <input class="string-256" type="text">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="info-column">
+                    <!-- City Input -->
+                    <h4 class="form-style">City</h4>
+                    <input class="string-128" type="text">
+                </div>
+                <div class="info-column">
+                    <!-- Zip Code Input -->
+                    <h4 class="form-style">Zip Code</h4>
+                    <input class="string-128" type="text">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="info-column">
+                    <!-- State Input -->
+                    <h5 class="form-style">State/Providence</h5>
+                    <input class="string-128" type="text">
+                </div>
+                <div class="info-column">
+                    <!-- Country Input -->
+                    <h5 class="form-style">Country</h5>
+                    <input class="string-128" type="text">
+                </div>
+            </div>
+            <h3 class="form-style">Technical Info</h3>
+            <div class="input-row">
+                <div class="info-column">
+                    <!-- Phone Input -->
+                    <h4 class="form-style">Phone Number</h4>
+                    <input class="string-128" type="text">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="info-column">
+                    <!-- Email Input -->
+                    <h4 class="form-style">Email Address</h4>
+                    <input class="string-256" type="text">
+                </div>
+            </div>
+            <!-- This is the emergency contact info where you enter 
+            a person's basic info for an emergency contact -->
+            <h3 class="form-style">Emergency Contact Info</h3>
+            <div class="input-row">
+                <div class="info-column">
+                    <!-- First Name Input -->
+                    <h4 class="form-style">First Name</h4>
+                    <input class="string-128" type="text">
+                </div>
+                <div class="info-column">
+                    <!-- Last Name Input -->
+                    <h4 class="form-style">Last Name</h4>
+                    <input class="string-128" type="text">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="info-column">
+                    <!-- Phone Input -->
+                    <h4 class="form-style">Phone</h4>
+                    <input class="string-128" type="text">
+                </div>
+                <div class="info-column">
+                    <!-- Relation -->
+                    <h4 class="form-style">Relation</h4>
+                    <input class="string-128" type="text">
+                </div>
+            </div>
+            <!-- Below here is where you get to write down where you would love to travel -->
+            <h3 class="form-style">Where would you like to visit?</h3>
+            <p class="form-style">NOTE: You do not have to list all of the boxes below.</p>
+            <table class="input-table">
+                <tr>
+                    <th class="input-th"><h4 class="form-style">Place to visit</h4></th>
+                    <th class="input-th"><h6 class="form-style">Already visited?</h6></th>
+                </tr>
+                <tr>
+                    <td class="input-td"><input class="string-256" type="text"></td> <!-- Enter here to write down the place -->
+                    <td class="input-td"><input type="checkbox"></td> <!-- Check this if you already have been there before -->
+                </tr>
+                <!-- And the process repeates 7 more times -->
+                <tr>
+                    <td class="input-td"><input class="string-256" type="text"></td>
+                    <td class="input-td"><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="input-td"><input class="string-256" type="text"></td>
+                    <td class="input-td"><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="input-td"><input class="string-256" type="text"></td>
+                    <td class="input-td"><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="input-td"><input class="string-256" type="text"></td>
+                    <td class="input-td"><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="input-td"><input class="string-256" type="text"></td>
+                    <td class="input-td"><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="input-td"><input class="string-256" type="text"></td>
+                    <td class="input-td"><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="input-td"><input class="string-256" type="text"></td>
+                    <td class="input-td"><input type="checkbox"></td>
+                </tr>
+            </table>
+            <!-- The SUMMIT Button -->
+            <p class="form-style">When you are done with the form, click the blue button</p>
+            <div class="input-row">
+                <div class="info-column">
+                    <h3 class="form-style">SUMMIT BUTTON</h3>
+                    <h4 class="form-style">\/ Click Here \/</h4>
+                    <input class="press-button" type="button" title="SUMMIT">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+</body>
+</html>
